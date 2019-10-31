@@ -7,19 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF19203A236A211500B0FBEF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF192039236A211500B0FBEF /* UIViewController.swift */; };
+		DF8001D4236866650032BC44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001D3236866650032BC44 /* MainViewController.swift */; };
+		DF8001D723688F8A0032BC44 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001D623688F8A0032BC44 /* TopBarView.swift */; };
+		DF8001D923688F9D0032BC44 /* TopBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF8001D823688F9D0032BC44 /* TopBarView.xib */; };
+		DF8001DC236898610032BC44 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001DB236898610032BC44 /* UIView.swift */; };
+		DF8001DE23689D700032BC44 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001DD23689D700032BC44 /* LoginViewController.swift */; };
+		DF8001E02368AE640032BC44 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001DF2368AE640032BC44 /* MenuViewController.swift */; };
+		DF8001E62368C9C10032BC44 /* JogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001E52368C9C10032BC44 /* JogTableViewCell.swift */; };
+		DF8001E92368CDB10032BC44 /* Jog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001E82368CDB10032BC44 /* Jog.swift */; };
+		DF8001EB2368CEA50032BC44 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001EA2368CEA50032BC44 /* MainViewModel.swift */; };
+		DF8001EE2368D6F60032BC44 /* AddJogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8001ED2368D6F60032BC44 /* AddJogViewController.swift */; };
+		DF8002112369CA530032BC44 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8002102369CA530032BC44 /* NetworkService.swift */; };
+		DF800213236A02EE0032BC44 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF800212236A02EE0032BC44 /* Parser.swift */; };
 		DFDFF084236862FC00F9342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDFF083236862FC00F9342B /* AppDelegate.swift */; };
-		DFDFF086236862FC00F9342B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDFF085236862FC00F9342B /* SceneDelegate.swift */; };
-		DFDFF088236862FC00F9342B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDFF087236862FC00F9342B /* ViewController.swift */; };
 		DFDFF08B236862FC00F9342B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDFF089236862FC00F9342B /* Main.storyboard */; };
 		DFDFF08D236862FE00F9342B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFDFF08C236862FE00F9342B /* Assets.xcassets */; };
 		DFDFF090236862FE00F9342B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDFF08E236862FE00F9342B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF192039236A211500B0FBEF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		DF8001D3236866650032BC44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DF8001D623688F8A0032BC44 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		DF8001D823688F9D0032BC44 /* TopBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopBarView.xib; sourceTree = "<group>"; };
+		DF8001DB236898610032BC44 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DF8001DD23689D700032BC44 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF8001DF2368AE640032BC44 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DF8001E52368C9C10032BC44 /* JogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogTableViewCell.swift; sourceTree = "<group>"; };
+		DF8001E82368CDB10032BC44 /* Jog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jog.swift; sourceTree = "<group>"; };
+		DF8001EA2368CEA50032BC44 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		DF8001ED2368D6F60032BC44 /* AddJogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJogViewController.swift; sourceTree = "<group>"; };
+		DF8002102369CA530032BC44 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DF800212236A02EE0032BC44 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		DFDFF080236862FC00F9342B /* JogTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDFF083236862FC00F9342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFDFF085236862FC00F9342B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFDFF087236862FC00F9342B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFDFF08A236862FC00F9342B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFDFF08C236862FE00F9342B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFDFF08F236862FE00F9342B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +59,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF8001D2236866480032BC44 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001E12368C9390032BC44 /* Menu */,
+				DF8001E22368C9450032BC44 /* Login */,
+				DF8001E32368C9510032BC44 /* Main */,
+				DF8001EC2368D6D30032BC44 /* AddJog */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DF8001D523688C240032BC44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001D623688F8A0032BC44 /* TopBarView.swift */,
+				DF8001D823688F9D0032BC44 /* TopBarView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF8001DA2368984C0032BC44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001DB236898610032BC44 /* UIView.swift */,
+				DF192039236A211500B0FBEF /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF8001E12368C9390032BC44 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001DF2368AE640032BC44 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DF8001E22368C9450032BC44 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001DD23689D700032BC44 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DF8001E32368C9510032BC44 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001E42368C9780032BC44 /* Cell */,
+				DF8001EA2368CEA50032BC44 /* MainViewModel.swift */,
+				DF8001D3236866650032BC44 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DF8001E42368C9780032BC44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001E52368C9C10032BC44 /* JogTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DF8001E72368CD880032BC44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001E82368CDB10032BC44 /* Jog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF8001EC2368D6D30032BC44 /* AddJog */ = {
+			isa = PBXGroup;
+			children = (
+				DF8001ED2368D6F60032BC44 /* AddJogViewController.swift */,
+			);
+			path = AddJog;
+			sourceTree = "<group>";
+		};
+		DF80020F2369C99C0032BC44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DF8002102369CA530032BC44 /* NetworkService.swift */,
+				DF800212236A02EE0032BC44 /* Parser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DFDFF077236862FC00F9342B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +166,12 @@
 		DFDFF082236862FC00F9342B /* JogTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DF80020F2369C99C0032BC44 /* Services */,
+				DF8001E72368CD880032BC44 /* Models */,
+				DF8001D523688C240032BC44 /* Views */,
+				DF8001D2236866480032BC44 /* Scenes */,
+				DF8001DA2368984C0032BC44 /* Extensions */,
 				DFDFF083236862FC00F9342B /* AppDelegate.swift */,
-				DFDFF085236862FC00F9342B /* SceneDelegate.swift */,
-				DFDFF087236862FC00F9342B /* ViewController.swift */,
 				DFDFF089236862FC00F9342B /* Main.storyboard */,
 				DFDFF08C236862FE00F9342B /* Assets.xcassets */,
 				DFDFF08E236862FE00F9342B /* LaunchScreen.storyboard */,
@@ -127,6 +240,7 @@
 			files = (
 				DFDFF090236862FE00F9342B /* LaunchScreen.storyboard in Resources */,
 				DFDFF08D236862FE00F9342B /* Assets.xcassets in Resources */,
+				DF8001D923688F9D0032BC44 /* TopBarView.xib in Resources */,
 				DFDFF08B236862FC00F9342B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +252,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFDFF088236862FC00F9342B /* ViewController.swift in Sources */,
+				DF8002112369CA530032BC44 /* NetworkService.swift in Sources */,
+				DF8001DC236898610032BC44 /* UIView.swift in Sources */,
+				DF8001E02368AE640032BC44 /* MenuViewController.swift in Sources */,
+				DF8001D4236866650032BC44 /* MainViewController.swift in Sources */,
+				DF8001D723688F8A0032BC44 /* TopBarView.swift in Sources */,
+				DF8001E92368CDB10032BC44 /* Jog.swift in Sources */,
+				DF8001EE2368D6F60032BC44 /* AddJogViewController.swift in Sources */,
+				DF19203A236A211500B0FBEF /* UIViewController.swift in Sources */,
+				DF8001E62368C9C10032BC44 /* JogTableViewCell.swift in Sources */,
+				DF800213236A02EE0032BC44 /* Parser.swift in Sources */,
+				DF8001DE23689D700032BC44 /* LoginViewController.swift in Sources */,
 				DFDFF084236862FC00F9342B /* AppDelegate.swift in Sources */,
-				DFDFF086236862FC00F9342B /* SceneDelegate.swift in Sources */,
+				DF8001EB2368CEA50032BC44 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PT86Z77NCY;
 				INFOPLIST_FILE = JogTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PT86Z77NCY;
 				INFOPLIST_FILE = JogTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
