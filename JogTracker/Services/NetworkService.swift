@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 fileprivate struct APIConstants {
     static let baseURL = "https://jogtracker.herokuapp.com/api/v1"
@@ -101,6 +102,34 @@ class NetworkService {
         }.resume()
     }
     
+    func rxGetJog() -> Single<[Jog]> {
+        guard let token = self.token,
+            let url = URL(string: APIConstants.jogsList + "?access_token=" + token)
+            else { return Single.error(NetworkError.requestDataPreparing) }
+        
+        return Single.create { single in
+            let request = URLRequest(url: url)
+            
+            let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+                if let error = error {
+                    single(.error(NetworkError.clientError(error)))
+                    return
+                }
+                
+                guard let data = data, let jogs = Parser.parseJogs(data) else {
+                    single(.error(NetworkError.dataError))
+                    return
+                }
+                
+                single(.success(jogs))
+            }
+            dataTask.resume()
+            
+            return Disposables.create {
+                dataTask.cancel()
+            }
+        }
+    }
 
     func sendJog(jog: Jog, sendMethod: SendMethod, completion: @escaping (Result<Bool, NetworkError>) -> Void) {
         guard let token = token,

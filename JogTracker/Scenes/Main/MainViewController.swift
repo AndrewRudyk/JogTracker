@@ -7,31 +7,35 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
-    static func create() -> MainViewController? {
-        guard let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return nil }
-        return mainViewController
-    }
-    
-    
     @IBOutlet private weak var topBarView: TopBarView!
     @IBOutlet private var tableView: UITableView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     private let viewModel = MainViewModel()
+    
+    private let bag = DisposeBag()
+
+    static func create() -> MainViewController? {
+        guard let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as? MainViewController else { return nil }
+        return mainViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
         topBarView.delegate = self
         tableView.rowHeight = 188
         loadData()
+        bindUI()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     // MARK: Actions
     @IBAction func addAction(_ sender: UIButton) {
@@ -46,6 +50,13 @@ class MainViewController: UIViewController {
     private func loadData() {
         spinner.startAnimating()
         viewModel.loadData()
+    }
+    
+    private func bindUI() {
+        viewModel.jogs.subscribe({ [weak self] _ in
+            self?.spinner.stopAnimating()
+            self?.tableView.reloadData()
+        }).disposed(by: bag)
     }
 }
 
